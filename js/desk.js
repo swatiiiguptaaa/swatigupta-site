@@ -2,7 +2,7 @@
 // viewer's desk), then can be picked up, thrown and hovered. One rAF loop
 // drives position, height (z), rotation, parallax and shadow for every object.
 (() => {
-  const desk = document.querySelector('.hero');
+  const desk = document.getElementById('desk');
   if (!desk) return;
   const hint = desk.querySelector('.hint');
   const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -23,29 +23,74 @@
   </filter>
 </svg>
 
-<p class="proto">Prototype · drawn objects are placeholders</p>
+<p class="proto">Prototype · drawn placeholder objects until your real photos arrive</p>
 
 <header class="top">
-  <a class="mark" href="#top">swati gupta<span>.</span></a>
-  <nav><a href="#about">About</a><a href="#highlights">Highlights</a><a href="#hi" class="pill">Say hi</a></nav>
+  <a class="mark" href="#desk">swati gupta<span>.</span></a>
+  <nav>
+    <a href="#files" data-open="launches">Launches</a>
+    <a href="#files" data-open="strategy">Strategy</a>
+    <a href="#files" data-open="hi" class="pill">Say hi</a>
+  </nav>
 </header>
 
 <main>
-<!-- 1. hero -->
-<section id="top" class="desk hero" aria-label="Intro">
-  <div class="hero-in">
-    <div class="title">
-      <p class="kicker">Product marketing &amp; strategy</p>
-      <h1 aria-label="Swati Gupta"><span class="ln"><span>swati</span></span><span class="ln"><span>gupta<i>.</i></span></span></h1>
-      <p class="line">The best product doesn't win. The best-understood product does. <span>I make sure yours is understood.</span></p>
-      <p class="based"><svg viewBox="0 0 16 22" width="12" height="16" aria-hidden="true"><path d="M8 1a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z" fill="#c8243a"/><circle cx="8" cy="8" r="2.6" fill="#0b0b0b"/></svg>Based in New York City</p>
-    </div>
-    <figure class="portrait"><img src="img/swati-portrait.jpg" alt="Swati Gupta" width="812" height="1100" fetchpriority="high"></figure>
+<section id="desk" class="desk" aria-label="Intro">
+  <div class="title">
+    <p class="kicker"><span>Product marketing &amp; strategy</span><span>New York City</span></p>
+    <h1><span class="ln"><span>swati</span></span><span class="ln"><span>gupta<i>.</i></span></span></h1>
+    <p class="line">The best product doesn't win. The best-understood product does. <span>I make sure yours is understood.</span></p>
   </div>
 
-  <p class="hint" aria-hidden="true">psst, you can move things</p>
+  <p class="hint" aria-hidden="true">psst, you can move things
+    <svg viewBox="0 0 60 40" width="46" height="30"><path d="M4 6 C 20 4, 40 10, 50 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M42 26 L51 32 L53 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </p>
 
-  <figure class="obj no-phone" style="--w:200px" data-d="93,74" data-m="84,90" data-r="8" data-z=".75" data-label="journal: where every launch starts">
+  <!-- Objects. data-d / data-m = rest position (% of desk) on desktop / phone, data-r = resting angle, data-z = parallax depth -->
+  <figure class="obj" style="--w:118px" data-d="12,27" data-m="15,21" data-r="-12" data-z=".9" data-label="camera roll: 80% booth photos">
+    <svg viewBox="-8 -8 136 260" role="img" aria-label="iPhone">
+      <defs>
+        <linearGradient id="gPhone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8d3de"/><stop offset=".55" stop-color="#b9b3c3"/><stop offset="1" stop-color="#9d96a8"/></linearGradient>
+      </defs>
+      <g filter="url(#sticker)">
+        <rect x="118" y="58" width="4" height="34" rx="2" fill="#8d8698"/>
+        <rect width="120" height="244" rx="22" fill="url(#gPhone)"/>
+        <rect x="2" y="2" width="116" height="240" rx="20" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+        <rect x="9" y="9" width="58" height="60" rx="15" fill="rgba(0,0,0,.1)" stroke="rgba(255,255,255,.4)"/>
+        <g fill="#1b1a1f" stroke="#78727f" stroke-width="2.5">
+          <circle cx="24" cy="25" r="11"/><circle cx="24" cy="53" r="11"/><circle cx="51" cy="39" r="11"/>
+        </g>
+        <g fill="#2b3955"><circle cx="24" cy="25" r="5"/><circle cx="24" cy="53" r="5"/><circle cx="51" cy="39" r="5"/></g>
+        <g fill="rgba(255,255,255,.7)"><circle cx="21.5" cy="22.5" r="1.8"/><circle cx="21.5" cy="50.5" r="1.8"/><circle cx="48.5" cy="36.5" r="1.8"/></g>
+        <circle cx="53" cy="18" r="3.2" fill="#f2eee2"/>
+        <path d="M14 120 C 40 130, 80 100, 106 112" stroke="rgba(255,255,255,.25)" stroke-width="10" fill="none" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </figure>
+
+  <figure class="obj" style="--w:132px" data-d="21,13" data-m="47,12" data-r="-5" data-z=".6" data-label="Broker Expo NYC, Sep 2026">
+    <svg viewBox="-8 -8 156 266" role="img" aria-label="Conference badge">
+      <defs><clipPath id="cCard"><rect x="10" y="84" width="120" height="160" rx="10"/></clipPath></defs>
+      <g filter="url(#sticker)">
+        <path d="M46 0 L64 72 M94 0 L76 72" stroke="#161616" stroke-width="13" stroke-linecap="square"/>
+        <path d="M46 0 L64 72 M94 0 L76 72" stroke="#C8243A" stroke-width="3" stroke-dasharray="2 7"/>
+        <rect x="60" y="64" width="20" height="24" rx="5" fill="#c9c9ce" stroke="#9a9aa0"/>
+        <rect x="10" y="84" width="120" height="160" rx="10" fill="#fbfbf8"/>
+        <g clip-path="url(#cCard)">
+          <rect x="10" y="104" width="120" height="38" fill="#C8243A"/>
+          <rect x="10" y="218" width="120" height="26" fill="#161616"/>
+        </g>
+        <rect x="52" y="91" width="36" height="7" rx="3.5" fill="#e3e2de"/>
+        <text x="70" y="121" text-anchor="middle" font-family="Syne, sans-serif" font-weight="700" font-size="12" fill="#fff" letter-spacing="1">BROKER EXPO</text>
+        <text x="70" y="134" text-anchor="middle" font-family="Syne, sans-serif" font-weight="600" font-size="8" fill="#fff" letter-spacing="1.5">NYC · SEP 2026</text>
+        <text x="70" y="176" text-anchor="middle" font-family="Instrument Serif, serif" font-size="25" fill="#161616">Swati Gupta</text>
+        <text x="70" y="196" text-anchor="middle" font-family="Syne, sans-serif" font-weight="600" font-size="9.5" fill="#55524d" letter-spacing="1">HERON DATA</text>
+        <text x="70" y="235" text-anchor="middle" font-family="Syne, sans-serif" font-weight="700" font-size="9" fill="#fff" letter-spacing="3">SPONSOR</text>
+      </g>
+    </svg>
+  </figure>
+
+  <figure class="obj" style="--w:200px" data-d="79,27" data-m="83,24" data-r="8" data-z=".75" data-label="journal: where every launch starts">
     <svg viewBox="-8 -8 216 276" role="img" aria-label="Journal">
       <defs>
         <linearGradient id="gJournal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9a2433"/><stop offset="1" stop-color="#5f1219"/></linearGradient>
@@ -67,7 +112,27 @@
     </svg>
   </figure>
 
-  <figure class="obj" style="--w:104px" data-d="53,80" data-m="16,20" data-r="6" data-z="1" data-label="fuel. non-negotiable.">
+  <figure class="obj" style="--w:220px" data-d="83,72" data-m="80,83" data-r="-7" data-z=".5" data-label="podcasts on the walk to SoHo">
+    <svg viewBox="-8 -8 246 226" role="img" aria-label="Headphones">
+      <defs>
+        <linearGradient id="gCup" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ececef"/><stop offset="1" stop-color="#a9abb2"/></linearGradient>
+      </defs>
+      <g filter="url(#sticker)">
+        <path d="M32 122 C 30 18, 198 18, 196 122" stroke="#c4c5ca" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M34 120 C 34 30, 194 30, 194 120" stroke="#8e9097" stroke-width="5" fill="none" stroke-dasharray="1 4"/>
+        <rect x="22" y="98" width="18" height="30" rx="5" fill="#b1b3b9"/>
+        <rect x="188" y="98" width="18" height="30" rx="5" fill="#b1b3b9"/>
+        <rect x="0" y="118" width="62" height="88" rx="26" fill="url(#gCup)"/>
+        <rect x="166" y="118" width="62" height="88" rx="26" fill="url(#gCup)"/>
+        <rect x="50" y="126" width="16" height="72" rx="8" fill="#2b2b2f"/>
+        <rect x="162" y="126" width="16" height="72" rx="8" fill="#2b2b2f"/>
+        <rect x="10" y="128" width="9" height="60" rx="4.5" fill="rgba(255,255,255,.65)"/>
+        <rect x="176" y="128" width="9" height="60" rx="4.5" fill="rgba(255,255,255,.65)"/>
+      </g>
+    </svg>
+  </figure>
+
+  <figure class="obj" style="--w:104px" data-d="18,73" data-m="28,79" data-r="6" data-z="1" data-label="fuel. non-negotiable.">
     <svg viewBox="-8 -8 126 256" role="img" aria-label="Iced matcha">
       <defs>
         <linearGradient id="gMatcha" x1="0" y1="0" x2="0" y2="1"><stop offset=".12" stop-color="#eef2e6"/><stop offset=".4" stop-color="#c9dba0"/><stop offset=".62" stop-color="#93b552"/><stop offset="1" stop-color="#5e8a2c"/></linearGradient>
@@ -88,7 +153,41 @@
     </svg>
   </figure>
 
-  <figure class="obj" style="--w:150px" data-d="55,20" data-m="80,24" data-r="-8" data-z=".85" data-label="every launch starts on a 2x2">
+  <figure class="obj" style="--w:168px" data-d="35,88" data-m="52,90" data-r="13" data-z=".7" data-label="downtown radius only">
+    <svg viewBox="-8 -8 186 123" role="img" aria-label="MetroCard">
+      <defs><linearGradient id="gMetro" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8cf2a"/><stop offset="1" stop-color="#e9b40f"/></linearGradient></defs>
+      <g filter="url(#sticker)">
+        <rect width="170" height="107" rx="8" fill="url(#gMetro)"/>
+        <text x="14" y="44" font-family="Hanken Grotesk, Arial, sans-serif" font-weight="600" font-style="italic" font-size="25" fill="#123a8c">MetroCard</text>
+        <text x="15" y="62" font-family="Hanken Grotesk, Arial, sans-serif" font-size="7" fill="#123a8c" letter-spacing=".2">INSERT THIS WAY · THIS SIDE FACING YOU</text>
+        <path d="M128 78 h22 l-7 -6 M150 78 l-7 6" stroke="#161616" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <rect x="14" y="74" width="80" height="14" rx="2" fill="rgba(18,58,140,.12)"/>
+      </g>
+    </svg>
+  </figure>
+
+  <figure class="obj" style="--w:214px" data-d="13,56" data-m="20,61" data-r="-6" data-z=".8" data-label="positioning, draft 4 (of 9)">
+    <svg viewBox="-8 -8 238 154" role="img" aria-label="Index card with a positioning statement">
+      <g filter="url(#sticker)">
+        <rect width="222" height="138" rx="3" fill="#fbfaf6"/>
+        <path d="M0 30 H222" stroke="#e58a95" stroke-width="1.2"/>
+        <g stroke="#c9d6ea" stroke-width="1"><path d="M0 52 H222 M0 74 H222 M0 96 H222 M0 118 H222"/></g>
+        <g font-family="Caveat, cursive" fill="#1d2a52">
+          <text x="12" y="22" font-size="17" font-weight="600">positioning</text>
+          <text x="12" y="48" font-size="18">For [who] who [the pain],</text>
+          <text x="12" y="70" font-size="18">we're the [category]</text>
+          <text x="12" y="92" font-size="18">that <tspan text-decoration="line-through">does more</tspan> [why we win].</text>
+          <text x="12" y="114" font-size="15" fill="#6a7391">say it in one breath or cut it.</text>
+        </g>
+        <g fill="none" stroke="#c8243a" stroke-width="2" stroke-linecap="round">
+          <ellipse cx="190" cy="18" rx="22" ry="12" transform="rotate(-6 190 18)"/>
+        </g>
+        <text x="190" y="23" text-anchor="middle" font-family="Caveat, cursive" font-weight="600" font-size="16" fill="#c8243a">v4</text>
+      </g>
+    </svg>
+  </figure>
+
+  <figure class="obj" style="--w:150px" data-d="63,86" data-m="77,70" data-r="-8" data-z=".85" data-label="every launch starts on a 2x2">
     <svg viewBox="-8 -8 176 176" role="img" aria-label="Sticky note with a hand-drawn 2x2">
       <defs><linearGradient id="gSticky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6cfd9"/><stop offset=".85" stop-color="#eebccb"/><stop offset="1" stop-color="#dda6b6"/></linearGradient></defs>
       <g filter="url(#sticker)">
@@ -111,269 +210,161 @@
       </g>
     </svg>
   </figure>
-
-  <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
 </section>
 
-<div class="marquee" aria-label="Takes I'll defend">
-  <div class="track">
-    <span>If they can't repeat it, they won't buy it.</span><i>✦</i>
-    <span>Features don't sell. Clarity does.</span><i>✦</i>
-    <span>You don't win by building more. You win by making people care.</span><i>✦</i>
-    <span>Pricing is positioning with a number on it.</span><i>✦</i>
-    <span aria-hidden="true">If they can't repeat it, they won't buy it.</span><i>✦</i>
-    <span aria-hidden="true">Features don't sell. Clarity does.</span><i>✦</i>
-    <span aria-hidden="true">You don't win by building more. You win by making people care.</span><i>✦</i>
-    <span aria-hidden="true">Pricing is positioning with a number on it.</span><i>✦</i>
-  </div>
-</div>
-
-<!-- 2. about -->
-<section id="about" class="about">
-  <div class="wrap about-top">
-    <div class="about-copy">
-      <p class="eyebrow">About me</p>
-      <h2 class="reveal-words">I like the start of things.</h2>
-      <p class="reveal">I'm Swati, a product marketer in New York. I'm happiest at the beginning: figuring out the quirks, finding what actually hurts, and experimenting my way to something I can point at.</p>
-      <p class="reveal">Right now that's Heron Data (YC S20), where I'm the only marketer at a 60-person company. I own positioning, launches, pricing and PR, including our Series A announcement.</p>
-      <p class="reveal">Before that I was in restructuring at Alvarez &amp; Marsal, which is where I figured out I wanted to be on the revenue side.</p>
-    </div>
-    <div class="stack" aria-label="Photos of Swati">
-      <figure class="ph-card" style="--i:0"><img src="img/swati-booth.jpg" alt="Swati at the Heron booth" loading="lazy"><figcaption>the booth, before doors</figcaption></figure>
-      <figure class="ph-card" style="--i:1"><img src="img/swati-conference.jpg" alt="Swati at a conference reception" loading="lazy"><figcaption>between demos</figcaption></figure>
-      <figure class="ph-card" style="--i:2"><img src="img/swati-booth-portrait.jpg" alt="Swati at the booth" loading="lazy"><figcaption>launch day</figcaption></figure>
-    </div>
-  </div>
-
-  <div class="wrap route">
-    <div class="map-wrap">
-      <svg class="map" viewBox="80 300 330 450" aria-label="Map of Manhattan with the places on Swati's resume">
-        <defs>
-          <clipPath id="island"><path id="islandPath" d="M300 742 C 268 732 248 700 244 660 L 240 560 C 238 480 236 400 238 320 C 240 240 248 160 262 92 C 270 52 285 26 300 14 C 318 26 336 56 346 102 C 356 172 362 252 362 332 C 362 422 358 522 352 602 C 348 662 336 716 300 742 Z"/></clipPath>
-        </defs>
-        <g transform="rotate(29 300 380)">
-          <use href="#islandPath" class="island-fill"/>
-          <g clip-path="url(#island)" class="grid">
-            <path d="M255 0 V600 M270 0 V600 M285 0 V600 M300 0 V600 M315 0 V600 M330 0 V600 M345 0 V600"/>
-            <path d="M200 70 H400 M200 100 H400 M200 130 H400 M200 160 H400 M200 190 H400 M200 220 H400 M200 250 H400 M200 280 H400 M200 310 H400 M200 340 H400 M200 370 H400 M200 400 H400 M200 430 H400 M200 460 H400 M200 490 H400 M200 520 H400 M200 550 H400 M200 580 H400"/>
-            <path class="broadway" d="M322 740 C 318 680 304 640 306 600 C 308 560 322 520 312 470 C 304 430 286 400 282 340"/>
-            <rect x="288" y="282" width="32" height="148" rx="3" class="park"/>
-          </g>
-          <use href="#islandPath" class="island-line"/>
-          <g class="river"><text x="196" y="380" transform="rotate(-90 196 380)">Hudson River</text><text x="412" y="420" transform="rotate(90 412 420)">East River</text></g>
-          <text x="304" y="360" class="park-label" transform="rotate(-90 304 360)">Central Park</text>
-          <path class="trail" d="M300 760 C 330 640, 330 520, 314 436 C 300 520, 292 580, 300 624 C 280 590, 276 540, 286 494 C 300 540, 306 590, 300 624"/>
-          <g class="pins">
-            <g class="pin" data-pin="am" transform="translate(314 436)"><circle r="13" class="halo"/><circle r="5"/><text x="0" y="-11" transform="rotate(-29)">A&amp;M</text></g>
-            <g class="pin" data-pin="expo" transform="translate(286 494)"><circle r="13" class="halo"/><circle r="5"/><text x="0" y="-11" transform="rotate(-29)">Broker Expo</text></g>
-            <g class="pin" data-pin="heron" transform="translate(300 624)"><circle r="13" class="halo"/><circle r="5"/><text x="0" y="-11" transform="rotate(-29)">Heron</text></g>
-          </g>
-        </g>
-        <g class="atl" transform="translate(92 726)"><path d="M26 -12 C 16 -6 8 2 3 12"/><path d="M1 3 L3 13 L12 10"/><text x="30" y="14">from Atlanta</text></g>
-      </svg>
-    </div>
-    <ol class="stops">
-      <li data-pin="atl"><span class="when">Before</span><b>Atlanta</b><p>B.S. in Business (Strategy &amp; Innovation) from Georgia Tech, Highest Honors. Product management at Cox Communications.</p></li>
-      <li data-pin="am"><span class="when">Jan 2023</span><b>Alvarez &amp; Marsal · Midtown</b><p>Restructuring analyst. Learned I wanted to be on the revenue side.</p></li>
-      <li data-pin="heron"><span class="when">Mar 2025</span><b>Heron Data · SoHo</b><p>Head of Marketing &amp; Product Marketing. The only marketer, building the brand from zero.</p></li>
-      <li data-pin="heron"><span class="when">Jul 2025</span><b>Series A · SoHo</b><p>Ran the PR for our $16M Series A, led by Insight Partners.</p></li>
-      <li data-pin="expo"><span class="when">Sep 2026</span><b>Broker Expo NYC · Midtown</b><p>Platinum sponsor. Two products launched as one story, live on the main stage.</p></li>
-      <li data-pin="heron"><span class="when">Now</span><b>Heron Data · SoHo</b><p>Positioning, launches, pricing and the strategy underneath.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 3. highlights folder -->
-<section id="highlights" class="highlights">
+<section id="files" class="files" aria-label="Work and more">
   <div class="wrap">
-    <p class="eyebrow">Highlights</p>
-    <div class="bigfolder" id="bigfolder">
-      <div class="bf-tab">highlights</div>
-      <div class="bf-back"></div>
-      <div class="bf-body">
-        <div class="dossiers">
-          <div class="chips" role="group" aria-label="Pick a highlight">
-            <button class="chip" data-show="expo" aria-pressed="true">Broker Expo NYC</button>
-            <button class="chip" data-show="seriesa" aria-pressed="false">Series A PR</button>
-            <button class="chip" data-show="fraud" aria-pressed="false">Fraud Consortium</button>
-            <button class="chip" data-show="mcp" aria-pressed="false">Heron MCP</button>
-            <button class="chip" data-show="pricing" aria-pressed="false">Packaging &amp; pricing</button>
-            <button class="chip" data-show="comms" aria-pressed="false">Customer comms</button>
-            <button class="chip" data-show="podcast" aria-pressed="false">Podcast</button>
+    <p class="files-kicker">The files</p>
+    <div class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="t-launches" aria-controls="p-launches" aria-selected="true" data-tab="launches" style="--c:#E7C3CC">Launches</button>
+      <button role="tab" id="t-strategy" aria-controls="p-strategy" aria-selected="false" data-tab="strategy" style="--c:#1f1d1c;--t:#f2f1ee">Strategy</button>
+      <button role="tab" id="t-cases" aria-controls="p-cases" aria-selected="false" data-tab="cases" style="--c:#C6D6E8">Case studies</button>
+      <button role="tab" id="t-writing" aria-controls="p-writing" aria-selected="false" data-tab="writing" style="--c:#D6CEF0">Writing + podcast</button>
+      <button role="tab" id="t-nyc" aria-controls="p-nyc" aria-selected="false" data-tab="nyc" style="--c:#C8243A;--t:#fbfaf7">NYC</button>
+      <button role="tab" id="t-play" aria-controls="p-play" aria-selected="false" data-tab="play" style="--c:#D3E5BF">Play</button>
+      <button role="tab" id="t-hi" aria-controls="p-hi" aria-selected="false" data-tab="hi" style="--c:#F1F0EC">Say hi</button>
+    </div>
+
+    <div class="folder" id="folder">
+      <article role="tabpanel" id="p-launches" aria-labelledby="t-launches" class="panel">
+        <div class="dossier">
+          <div class="polaroids">
+            <figure class="pol" style="--r:-4deg"><div class="ph">booth photo</div><figcaption>the booth, 8:47am</figcaption></figure>
+            <figure class="pol" style="--r:5deg"><div class="ph">stage photo</div><figcaption>20 minutes on stage</figcaption></figure>
+            <figure class="pol" style="--r:-2deg"><div class="ph">demo screenshot</div><figcaption>the demo I vibe-coded</figcaption></figure>
           </div>
-          <div class="dossier" data-id="expo">
-            <div class="polaroids two">
-              <figure class="pol" style="--r:-4deg"><img src="img/swati-booth.jpg" alt="Swati at the Heron booth" loading="lazy"><figcaption>the booth, before doors</figcaption></figure>
-              <figure class="pol" style="--r:5deg"><img src="img/swati-conference.jpg" alt="Swati at a conference reception" loading="lazy"><figcaption>between demos</figcaption></figure>
-            </div>
-            <div class="brief">
-              <p class="tagline">Dossier 01 · Launch</p>
-              <h2>Broker Expo NYC</h2>
-              <p class="meta">September 2026 · Heron Data · Platinum sponsor</p>
-              <ul>
-                <li>Launched two products, Deal View and Funder Intelligence, as one story.</li>
-                <li>Wrote and ran a 20-minute tech demo on the main stage.</li>
-                <li>Built the live demo myself instead of showing slides.</li>
-              </ul>
-              <button class="postcard" aria-label="Flip the results postcard">
-                <span class="pc-in">
-                  <span class="pc-face pc-front">
-                    <span class="pc-title">Results, drawn by hand</span>
-                    <svg viewBox="0 0 220 90" class="dots" aria-hidden="true"></svg>
-                    <span class="pc-flip">tap to flip ↻</span>
-                  </span>
-                  <span class="pc-face pc-back">
-                    <span class="pc-title">Legend</span>
-                    <span class="pc-copy">Each dot is one demo booked at the booth. Real numbers go here once Heron approves them (TK).</span>
-                  </span>
+          <div class="brief">
+            <p class="tagline">Dossier 01 · Launch</p>
+            <h2>Broker Expo NYC</h2>
+            <p class="meta">September 2026 · Heron Data · Platinum sponsor</p>
+            <ul>
+              <li>Launched two products, Deal View and Funder Intelligence, as one story.</li>
+              <li>Wrote and ran a 20-minute tech demo on the main stage.</li>
+              <li>Built the live demo myself instead of showing slides.</li>
+            </ul>
+            <button class="postcard" aria-label="Flip the results postcard">
+              <span class="pc-in">
+                <span class="pc-face pc-front">
+                  <span class="pc-title">Results, drawn by hand</span>
+                  <svg viewBox="0 0 220 90" class="dots" aria-hidden="true"></svg>
+                  <span class="pc-flip">tap to flip ↻</span>
                 </span>
-              </button>
-            </div>
-          </div>
-          <div class="dossier" data-id="seriesa" hidden>
-            <div class="clips">
-              <a class="clip" style="--r:-3deg" href="https://siliconangle.com/2025/07/15/heron-raises-16m-automate-document-heavy-work/" target="_blank" rel="noopener"><span class="pub">SiliconANGLE</span><b>Heron raises $16M to automate document-heavy work</b><em>best placement</em></a>
-              <a class="clip" style="--r:2.5deg" href="https://alleywatch.com/2025/07/heron-data-ai-document-workflow-automation-business-process-automation-smb-lending-johannes-jaeckle/" target="_blank" rel="noopener"><span class="pub">AlleyWatch</span><b>Heron Data raises $16.6M to automate document-heavy workflows with AI</b><em>the CEO interview</em></a>
-              <a class="clip" style="--r:-1.5deg" href="https://www.pymnts.com/news/artificial-intelligence/2025/ai-startups-heron-aims-to-organize-business-data/" target="_blank" rel="noopener"><span class="pub">PYMNTS</span><b>AI Startups: Heron aims to organize business data</b></a>
-            </div>
-            <div class="brief">
-              <p class="tagline">Dossier 02 · Announcement</p>
-              <h2>Seed to Series A</h2>
-              <p class="meta">July 2025 · $16M led by Insight Partners · with YC, BoxGroup, Flex Capital</p>
-              <ul>
-                <li>Ran PR for the announcement end to end: the story, the press list, the pitches, the placements.</li>
-                <li>Landed coverage in SiliconANGLE, PYMNTS (twice), AlleyWatch, Built In, FF News and more.</li>
-                <li>Pitched and placed the founder interviews, including AlleyWatch's CEO Q&amp;A.</li>
-              </ul>
-              <p class="note">four months into the job</p>
-            </div>
-          </div>
-          <div class="dossier" data-id="fraud" hidden>
-            <div class="sketch">
-              <svg viewBox="0 0 300 220" aria-hidden="true">
-                <g fill="none" stroke="#1d2a52" stroke-width="1.6" stroke-linecap="round"><path d="M150 110 L60 50 M150 110 L250 46 M150 110 L52 170 M150 110 L246 176 M150 110 L150 24 M60 50 L150 24 M250 46 L246 176"/></g>
-                <g fill="#fbfaf7" stroke="#1d2a52" stroke-width="1.8"><circle cx="60" cy="50" r="15"/><circle cx="250" cy="46" r="15"/><circle cx="52" cy="170" r="15"/><circle cx="246" cy="176" r="15"/><circle cx="150" cy="24" r="13"/></g>
-                <circle cx="150" cy="110" r="24" fill="#c8243a"/>
-                <g font-family="Caveat, cursive" font-size="17" fill="#1d2a52" text-anchor="middle"><text x="60" y="88">funder</text><text x="252" y="84">funder</text><text x="52" y="208">funder</text><text x="248" y="214">funder</text></g>
-                <text x="150" y="116" text-anchor="middle" font-family="Caveat, cursive" font-size="16" fill="#fbfaf7">ring</text>
-              </svg>
-              <p class="note">give a little data, get the whole network</p>
-            </div>
-            <div class="brief">
-              <p class="tagline">Dossier 03 · Launch</p>
-              <h2>Fraud Consortium</h2>
-              <p class="meta">October 2026 · Heron Data · MCA funders</p>
-              <ul>
-                <li>Positioned a give-to-get network: funders report early defaults, Heron flags applicants linked to fraud rings.</li>
-                <li>Made the counterintuitive part simple: why sharing your data makes you safer.</li>
-                <li>Ran the launch to new and existing customers, with tiered comms and follow-ups.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="dossier" data-id="mcp" hidden>
-            <div class="sketch term">
-              <p><span>you</span> pull last month's declined deals and why</p>
-              <p><span>agent</span> calling heron.search_deals …</p>
-              <p><span>agent</span> 41 deals. top reason: negative days</p>
-              <p class="note">your AI agent, now fluent in Heron</p>
-            </div>
-            <div class="brief">
-              <p class="tagline">Dossier 04 · Launch</p>
-              <h2>Heron MCP server</h2>
-              <p class="meta">September 2026 · Heron Data · beta</p>
-              <ul>
-                <li>Positioned Heron's MCP server: customers' AI agents work with Heron directly.</li>
-                <li>Ran the beta research with early customers to find the words they use.</li>
-                <li>Wrote the claims discipline: what we can say, and what we can't yet.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="dossier" data-id="pricing" hidden>
-            <div class="sketch">
-              <svg viewBox="0 0 300 220" aria-hidden="true">
-                <g fill="none" stroke="#1d2a52" stroke-width="1.8" stroke-linecap="round">
-                  <path d="M30 190 H90 V150 H150 V110 H210 V70 H270"/>
-                </g>
-                <g font-family="Caveat, cursive" font-size="17" fill="#1d2a52"><text x="34" y="182">platform</text><text x="94" y="142">product</text><text x="154" y="102">module</text><text x="214" y="62">plan / SKU</text></g>
-                <path d="M262 38 l10 -12 4 16" fill="none" stroke="#c8243a" stroke-width="2" stroke-linecap="round"/>
-                <text x="190" y="30" font-family="Caveat, cursive" font-size="18" fill="#c8243a">value ladder</text>
-              </svg>
-              <p class="note">pricing is positioning with a number on it</p>
-            </div>
-            <div class="brief">
-              <p class="tagline">Strategy · Q4 2026</p>
-              <h2>Packaging &amp; pricing</h2>
-              <p class="meta">Heron Data · cross-functional sprint I lead</p>
-              <ul>
-                <li>Mapped every product and SKU Heron sells, from four different sources of truth.</li>
-                <li>Drew the platform → product → module → plan hierarchy with each squad lead.</li>
-                <li>Built the value ladder the packaging and the pricing page hang on.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="dossier" data-id="comms" hidden>
-            <div class="sketch">
-              <svg viewBox="0 0 300 220" aria-hidden="true">
-                <g font-family="Caveat, cursive" fill="#1d2a52">
-                  <text x="20" y="50" font-size="26" fill="#c8243a">P1</text><text x="62" y="50" font-size="18">blast to everyone, then follow up</text>
-                  <text x="20" y="110" font-size="26">P2</text><text x="62" y="110" font-size="18">tell the customers it's for</text>
-                  <text x="20" y="170" font-size="26">P3</text><text x="62" y="170" font-size="18">release notes, quietly</text>
-                </g>
-                <g stroke="#1d2a52" stroke-width="1" stroke-dasharray="3 5"><path d="M20 72 H280 M20 132 H280"/></g>
-              </svg>
-              <p class="note">a launch nobody hears about didn't happen</p>
-            </div>
-            <div class="brief">
-              <p class="tagline">Strategy · Oct 2026</p>
-              <h2>Customer comms, as a system</h2>
-              <p class="meta">Heron Data · with customer ops</p>
-              <ul>
-                <li>Designed how existing customers hear about what's new, tiered P1 to P3.</li>
-                <li>Wrote the definition of "ready" so nothing ships to customers half-explained.</li>
-                <li>Set up the blast-then-follow-up loop with customer ops; Fraud Consortium was the first run.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="dossier" data-id="podcast" hidden>
-            <div class="player">
-              <iframe title="Spotify: The Only Marketer at a 60-Person Company, Swati Gupta" src="https://open.spotify.com/embed/episode/0vbCJVTCFBP7razjbyaUhd?utm_source=generator&amp;theme=0" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-            <div class="brief">
-              <p class="tagline">On air · Marketers of Technology</p>
-              <h2>The only marketer at a 60-person company</h2>
-              <p class="meta">October 2026 · podcast episode</p>
-              <ul>
-                <li>How I run marketing solo at Heron.</li>
-                <li>AI made me a faster listener, not a faster writer.</li>
-                <li>Everything I make starts from what customers actually said on calls.</li>
-              </ul>
-              <a class="btn" href="https://open.spotify.com/episode/0vbCJVTCFBP7razjbyaUhd" target="_blank" rel="noopener">Listen on Spotify →</a>
-            </div>
+                <span class="pc-face pc-back">
+                  <span class="pc-title">Legend</span>
+                  <span class="pc-copy">Each dot is one demo booked at the booth. Real numbers go here once Heron approves them (TK).</span>
+                </span>
+              </span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="bf-cover" aria-hidden="true"><span>open me</span></div>
-    </div>
-  </div>
-</section>
+        <div class="ledger">
+          <p class="tagline">Launch log · Heron Data, 2026</p>
+          <ol>
+            <li><span class="when">Nov</span><b>Funder Intelligence + Broker CRM</b><span class="what">Positioning, launch plan, sales enablement</span></li>
+            <li><span class="when">Oct</span><b>Fraud Consortium</b><span class="what">A give-to-get network; the hard part was explaining why sharing data makes you safer</span></li>
+            <li><span class="when">Sep</span><b>Heron MCP server</b><span class="what">Let customers' AI agents work with Heron directly; beta research and positioning</span></li>
+            <li><span class="when">Sep</span><b>Broker Expo NYC</b><span class="what">Two products, one story, a live demo on stage (above)</span></li>
+            <li><span class="when">2026</span><b>KYB / KYC</b><span class="what">Email-first launch to existing customers</span></li>
+          </ol>
+        </div>
+      </article>
 
-<!-- 4. contact -->
-<section id="hi" class="contact">
-  <div class="wrap">
-    <p class="eyebrow">Say hi</p>
-    <a class="big-mail" href="mailto:gupta71swati@gmail.com">gupta71swati@gmail.com</a>
-    <p class="lede">Want to talk positioning, launches, pricing, or the best matcha below 14th Street?</p>
-    <p class="links">
-      <a href="https://www.linkedin.com/in/swati-gupta1" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://swatiii.substack.com" target="_blank" rel="noopener">Substack</a>
-      <a href="https://x.com/swatiiidotcom" target="_blank" rel="noopener">X</a>
-    </p>
-    <p class="foot">© 2026 Swati Gupta · New York City</p>
+      <article role="tabpanel" id="p-strategy" aria-labelledby="t-strategy" class="panel" hidden>
+        <p class="tagline">The thinking under the launches</p>
+        <h2>Strategy, then story, then proof</h2>
+        <p class="lede">A launch is the loud part. Most of my job is the quiet part before it: deciding what we sell, to whom, and why we win.</p>
+        <div class="memos">
+          <section class="memo" style="--r:-1.4deg">
+            <p class="no">Memo 01 · Q4 2026</p>
+            <h3>Packaging &amp; pricing</h3>
+            <p>Mapped every product and SKU Heron sells, drew the platform → product → module hierarchy, and built the value ladder the packaging hangs on.</p>
+            <p class="note">pricing is positioning with a number on it</p>
+          </section>
+          <section class="memo" style="--r:1.1deg">
+            <p class="no">Memo 02 · Oct 2026</p>
+            <h3>Customer comms, as a system</h3>
+            <p>Designed how existing customers hear about what's new: P1/P2/P3 tiers, a definition of "ready," and a blast-then-follow-up loop with customer ops.</p>
+            <p class="note">a launch nobody hears about didn't happen</p>
+          </section>
+          <section class="memo" style="--r:-.6deg">
+            <p class="no">Memo 03 · always</p>
+            <h3>How I work</h3>
+            <svg class="flow" viewBox="0 0 300 70" aria-label="Strategy, then story, then proof">
+              <g font-family="Caveat, cursive" font-size="20" fill="currentColor" text-anchor="middle"><text x="42" y="42">strategy</text><text x="150" y="42">story</text><text x="256" y="42">proof</text></g>
+              <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M84 36 C 100 30, 110 30, 122 36 M116 31 l7 5 -8 3"/><path d="M182 36 C 198 30, 208 30, 222 36 M216 31 l7 5 -8 3"/><ellipse cx="42" cy="36" rx="40" ry="18" stroke="#c8243a"/></g>
+            </svg>
+            <p>Pick the fight first. Then write the one-breath version. Then find the customer, number or demo that proves it.</p>
+          </section>
+        </div>
+        <div class="takes">
+          <p class="tagline">Takes I'll defend</p>
+          <ul>
+            <li>If they can't repeat it, they won't buy it.</li>
+            <li>You don't win by building more. You win by making people care.</li>
+            <li>Features don't sell. Clarity does.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article role="tabpanel" id="p-cases" aria-labelledby="t-cases" class="panel" hidden>
+        <p class="tagline">Customer stories I wrote</p>
+        <h2>Case studies</h2>
+        <div class="cards">
+          <a class="card" href="#" aria-disabled="true"><span class="no">01</span><b>Customer TK</b><span>Headline result TK</span><em>read →</em></a>
+          <a class="card" href="#" aria-disabled="true"><span class="no">02</span><b>Customer TK</b><span>Headline result TK</span><em>read →</em></a>
+          <a class="card" href="#" aria-disabled="true"><span class="no">03</span><b>Customer TK</b><span>Headline result TK</span><em>read →</em></a>
+        </div>
+      </article>
+
+      <article role="tabpanel" id="p-writing" aria-labelledby="t-writing" class="panel" hidden>
+        <div class="onair">
+          <div>
+            <p class="tagline">On air · Marketers of Technology</p>
+            <h2>The only marketer at a 60-person company</h2>
+            <p class="lede">How I run marketing solo at Heron: AI made me a faster listener, not a faster writer. Everything I make starts from what customers actually said on calls.</p>
+            <a class="btn" href="https://open.spotify.com/episode/0vbCJVTCFBP7razjbyaUhd" target="_blank" rel="noopener">Listen on Spotify →</a>
+          </div>
+          <div class="player">
+            <iframe title="Spotify: The Only Marketer at a 60-Person Company, Swati Gupta" src="https://open.spotify.com/embed/episode/0vbCJVTCFBP7razjbyaUhd?utm_source=generator&amp;theme=0" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="substack">
+          <p class="tagline">Substack</p>
+          <h3>Notes from building a brand from zero</h3>
+          <p>Latest posts from swatiii.substack.com will load here automatically.</p>
+          <a href="https://swatiii.substack.com" target="_blank" rel="noopener">Read on Substack →</a>
+        </div>
+      </article>
+
+      <article role="tabpanel" id="p-nyc" aria-labelledby="t-nyc" class="panel" hidden>
+        <p class="tagline">Personal texture</p>
+        <h2>My downtown, mapped</h2>
+        <p class="lede">An illustrated map of my favorite coffee and food spots goes here. Waiting on the list.</p>
+      </article>
+
+      <article role="tabpanel" id="p-play" aria-labelledby="t-play" class="panel" hidden>
+        <p class="tagline">Mini game</p>
+        <h2>Matcha Run</h2>
+        <p class="lede">Catch the matcha. Dodge "synergy," "leverage," pigeons, and the occasional em-dash. Coming next.</p>
+      </article>
+
+      <article role="tabpanel" id="p-hi" aria-labelledby="t-hi" class="panel" hidden>
+        <p class="tagline">Contact</p>
+        <h2>Say hi</h2>
+        <p class="lede">Want to talk positioning, launches, pricing, or the best matcha below 14th Street? Email me.</p>
+        <p class="links">
+          <a class="btn" href="mailto:gupta71swati@gmail.com">gupta71swati@gmail.com</a>
+          <a href="https://www.linkedin.com/in/swati-gupta1" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://swatiii.substack.com" target="_blank" rel="noopener">Substack</a>
+          <a href="https://x.com/swatiiidotcom" target="_blank" rel="noopener">X</a>
+        </p>
+      </article>
+    </div>
   </div>
 </section>
 </main>
 
 <script src="js/desk.js"></script>
-<script src="js/site.js"></script>
+<script src="js/files.js"></script>
 </body>
 </html>
