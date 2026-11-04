@@ -133,3 +133,34 @@ h1 .ln:nth-child(2) > span { animation-delay: .12s; font-style: italic }
   *, *::before, *::after { animation: none !important; transition: none !important }
   html { scroll-behavior: auto }
 }
+
+/* ---------- PMM + strategy layer ---------- */
+.line span { display: block; margin-top: 8px; font-family: var(--hand); font-size: 1.35em; color: #ece6da; transform: rotate(-1.5deg) }
+
+/* launch log: a ledger of what shipped */
+.ledger { margin-top: clamp(36px, 6vw, 64px); padding-top: 22px; border-top: 1.5px solid currentColor }
+.ledger ol { list-style: none; margin: 12px 0 0; padding: 0 }
+.ledger li { display: grid; grid-template-columns: 64px minmax(0, 15em) 1fr; gap: 4px 20px; align-items: baseline; padding: 12px 0; border-bottom: 1px dashed rgba(26,25,24,.35) }
+.ledger .when { font-family: var(--caps); font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .65 }
+.ledger b { font-family: var(--serif); font-weight: 400; font-size: 25px; line-height: 1.1 }
+.ledger .what { font-size: 16px; opacity: .85 }
+@media (max-width: 680px) { .ledger li { grid-template-columns: 52px 1fr } .ledger .what { grid-column: 2 } }
+
+/* strategy folder: dark, so the paper memos pop */
+#p-strategy .lede { color: #d8d5cf }
+.folder:has(#p-strategy:not([hidden])) { box-shadow: 0 40px 70px -40px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.14) inset }
+.memos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 34px }
+@media (max-width: 900px) { .memos { grid-template-columns: 1fr } }
+.memo { background: #fbfaf7; color: var(--type); padding: 22px 22px 20px; border-radius: 3px; transform: rotate(var(--r)); box-shadow: 0 22px 34px -20px rgba(0,0,0,.8); display: grid; gap: 10px; align-content: start; transition: transform .35s cubic-bezier(.16,1,.3,1);
+  background-image: linear-gradient(#fbfaf7 0 46px, transparent 46px), repeating-linear-gradient(transparent 0 25px, #eef1f6 25px 26px) }
+.memo:hover { transform: rotate(0) translateY(-4px) }
+.memo .no { margin: 0; font-family: var(--caps); font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; opacity: .55 }
+.memo h3 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: 30px; line-height: 1 }
+.memo p { margin: 0; font-size: 15.5px; line-height: 1.5 }
+.memo .note { font-family: var(--hand); font-size: 21px; line-height: 1.1; color: var(--cherry); transform: rotate(-1.5deg) }
+.memo .flow { width: 100%; height: auto; color: #1d2a52 }
+
+.takes { margin-top: 40px }
+.takes ul { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px }
+.takes li { font-family: var(--serif); font-size: clamp(20px, 2.2vw, 26px); line-height: 1.2; padding: 10px 18px; border: 1.5px solid rgba(242,241,238,.5); border-radius: 999px }
+.takes li:nth-child(2) { font-style: italic }

@@ -31,7 +31,7 @@
     });
   });
   document.querySelectorAll('[data-open]').forEach(a => a.addEventListener('click', () => open(a.dataset.open)));
-  open('work');
+  open('launches');
 
   // postcard
   const card = document.querySelector('.postcard');
